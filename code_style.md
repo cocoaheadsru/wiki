@@ -20,7 +20,7 @@ These guidelines applied to **all** CocoaHeads Russia projects.
 **Naming**
 
 - Controller
-  - Controller classes musn't have application logic and can only be used for classes intercation
+  - Controller classes mustn't have application logic and can only be used for classes interaction
 - Protocols
   - Protocols that describe what something is should read as nouns **(e.g.** `Collection`**)**.
   - Protocols that describe a capability should be named using the suffixes *-able*, *-ible*, or *-ing* **(e.g.** `Equatable`**,** `ProgressReporting`**)**.

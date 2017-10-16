@@ -7,4 +7,4 @@
 
 **Connected tasks** (remove it if no tasks)
 
-**Changes list** (remove it if PR not splitted)
+**Changes list** (remove it if PR not split)

@@ -15,7 +15,7 @@ Join us in [Telegram](https://t.me/cocoaheads)
 
 # Projects
 
-Here you can find all information about contributing to our open-source projects.
+Here you can find all information about our open-source projects.
 
 Now we're working on [CocoaHeads Server](https://github.com/cocoaheadsru/server) — server side API for CocoaHeads Russia app. It was built with Swift and backed by Vapor.
 

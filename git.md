@@ -10,7 +10,7 @@ We use [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/) approa
 
 ## Branching
 
-We use [Trello](https://trello.com) for task managements and [this hook](/resporces/scripts/prepare-commit-msg) for git integration with Trello
+We use [Trello](https://trello.com) for task managements and [this hook](/resources/scripts/prepare-commit-msg) for git integration with Trello
 
 **How it works?**
 
@@ -19,7 +19,7 @@ Each git brach name should match the following pattern `task/TRELLO_TASK_ID/task
 **To apply hook**
 
 - Place it in `{PROJECT_FOLDER_PATH}/.git/hooks` folder
-- Change its access permitions to `755`
+- Change its access permissions to `755`
 
 <!-- Separate code from list -->
 
