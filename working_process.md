@@ -1,40 +1,30 @@
 # Working Process
 
-These guidelines applied to **all** CocoaHeads Russia projects.
+We organize our work with help of several tools. We sure you already familiar with them :)
 
-## Xcode and Swift Style Guidelines
+### Organizing Tools
 
-**We follow [these guidelines](https://github.com/raywenderlich/swift-style-guide) in coding**
+- Task management in Trello
+  - CocoaHeads Server API [Trello Board](https://trello.com/b/CIz6BNT1/server-side-swift)
+- Two times a week communications with Google Hangouts
+- Regular communications in our [Slack Workspace](https://chmeetupapp.slack.com/)
+- All our projects source code hosted [here](https://github.com/cocoaheadsru) on GitHub
 
-* Don't use acronyms and abbreviations
-* Use indentation == 2 in for *Tab width* and *Indent width*
+### Software
 
-**Xcode → Preferences → Text Editing → Indentation**
+- IDE: [Xcode](https://developer.apple.com/xcode/)<br>
+- Dependency management: [Carthage](https://github.com/Carthage/Carthage) for iOS/macOS apps<br>
+- Git GUI client: [Sourcetree](https://www.sourcetreeapp.com)<br>
+- MySQL GUI client: [Sequel Pro](https://www.sequelpro.com)
+- REST client: [Postman](https://www.getpostman.com/)
 
-![Indentations](/resources/images/indentation.png)
+## Contributing
 
-## Coding
+If you want to contribute to our projects
 
-### iOS/macOS
-
-**Naming**
-
-- Controller
-  - Controller classes musn't have application logic and can only be used for classes intercation
-- Protocols
-  - Protocols that describe what something is should read as nouns **(e.g. Collection)**.
-  - Protocols that describe a capability should be named using the suffixes *-able*, *-ible*, or *-ing* **(e.g. Equatable, ProgressReporting)**.
-- Extensions
-  - Extensions must be named as follow: `<Capitalized type name>+<Capitalized component name>` **(e.g. String+Localization)**.
-  - Extensions must be placed in proper folders: `extensions/<Capitalized framework name>/<Capitalized type name>/<Extension File>` **(e.g. extensions/Foundation/String/String+Localization.swift)**
-	  
-**Project structure must match file structure**
-
-![Project Structure](/resources/images/project_structure.png)
-
-**Fonts & Colors**
-
-- Fonts must be assigned through `enum UIFont.FontType` **(e.g. `UIFont.appFont(.gothamProMedium(size: 14))`)**
-- The same with colors: `enum UIColor.ColorType` **(e.g. `UIColor(.grey)`)**
-
-### Vapor
+- Read this documentation
+- Check out our [Code Style Guidelines](/code_style.md)
+- And how we organize our [Work with Git](/git.md)
+- Fork one of our projects and read its docs
+  - [CocoaHeads Server](https://github.com/cocoaheadsru/server) | Docs
+- Welcome on board!

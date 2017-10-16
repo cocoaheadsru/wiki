@@ -1,20 +1,28 @@
 # CocoaHeads Russia
 
-We are the biggest community of iOS/macOS Developers in Russia. We organize developers meetups in Moscow and St.Petersburg.
+![CocoaHeads Logo](/resources/images/cocoaheads_logo.png)
 
-Follow us on [Twitter](https://twitter.com/cocoaheadsru) and [Facebook](https://www.facebook.com/cocoaheads) or join us in [Telegram](https://t.me/cocoaheads)!
+We are the biggest community of iOS/macOS Developers in Russia. We organize developers meetups in Moscow and Saint-Petersburg.
 
-Also we have [Telegram channels](http://ios-channels.ru) for iOS Developers.
+You can register to one of our future meetup through [iOS app](https://itunes.apple.com/ru/app/cocoaheads-russia/id1257534277).
+
+### We social
+
+Follow us on [Twitter](https://twitter.com/cocoaheadsru)<br>
+Join our group on [Facebook](https://www.facebook.com/cocoaheads) and [VK](https://vk.com/cocoaheadsrussia)<br>
+Subscribe to our [YouTube channel](https://www.youtube.com/channel/UCPZtkJkHv_3pPC0veurLQ6Q)<br>
+Join us in [Telegram](https://t.me/cocoaheads)
+
+# Projects
+
+Here you can find all information about contributing to our open-source projects.
+
+Now we're working on [CocoaHeads Server](https://github.com/cocoaheadsru/server) — server side API for CocoaHeads Russia app. It was built with Swift and backed by Vapor.
+
+Want to contribute? Start [here](working_process.md)!
+
+# Useful Resources
 
 ![iOS Channels](/resources/images/telegram_channels.jpg)
 
-# Wiki
-
-Here you can find all the information about contributing to our open-source projects.
-
-Now we're working on [CocoaHeads Server](https://github.com/cocoaheadsru/server) — server side api for CocoaHeads Russia app. It was built with Swift and backed by Vapor.
-
-## First things first
-
-- Read about [Working Process](working_process.md)
-- And how we organize our [working with Git](git.md)
+[Telegram channels](http://ios-channels.ru) for Russian-speaking iOS Developers.
