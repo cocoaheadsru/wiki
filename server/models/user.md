@@ -5,12 +5,12 @@
 |Field|Type|Description|Remarks|
 |---|---|---|---|
 |id|integer||Primary Key|
-|username|string|||
-|password_hash|string|||
-|password_reset_token|string|||
+|name|string|||
+|lastname|string|||
+|company|string|||
+|position|string|||
+|photo|string|URL of photo||
 |email|string|||
 |phone|string|||
-|status|integer|10 — Active User<br>0 — Deleted User||
-|created_at|integer|||
-|created_at|integer|||
-|password|string|||
+|created_at|timestamp||Managed by MySQL|
+|updated_at|timestamp||Managed by MySQL|

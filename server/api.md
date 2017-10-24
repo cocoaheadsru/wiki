@@ -10,12 +10,18 @@ When you setup CocoaHeads Server on your local machine, you'll have 3 environmen
 
 Depending on environments base url will be:
 
-- Develop: `http://localhost:8080/method/`
-- Staging: ``
-- Production: `http://upapi.ru/method/`
+- Develop: `http://localhost:8080/`
+- Staging: `http://dev.cocoaheads.ru`
+- Production: `http://api.cocoaheads.ru/`
 
 ## Request Headers
 
-Each request must include `token` string, which is current user token from CocoaHeads Meetup app. If user is not logged in `token` need to be empty string.
+Request must include following header parameters:
 
-While debugging you can include `debug: 1` to headers. In debug mode response will contain additional information necessary for debugging.
+|Parameter|Type|Description|Required|
+|---|---|---|---|
+|api-version|string|Current version of API|YES|
+|secret-token|string|App secret token (`test` for Develop environment)|YES|
+|user-token|string|Current user token|YES*|
+
+\* `user-token` required for several methods which return user specific data.

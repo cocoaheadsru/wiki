@@ -1,75 +1,106 @@
 # Users
 
-## GET User Profile
+Methods for manage User model objects and associated models.
+
+## GET User Data
 
 Returns single profile, associated with certain user by token.
 
+    GET /users/{user_id}
 
-    GET /user/profile
-
-**Request Parameters**
-
-|Name|Value Type|Value Description|Required|
-|---|---|---|---|
-|token|String|User Device Token|YES|
-
-**Response Data Structure**
-
-|Property|Type|Description|Remarks|
-|---|---|---|---|
-|id|integer|||
-|username|string|||
-|email|string|||
-|phone|string|||
-|status|integer|10 — Active User<br>0 — Deleted User||
+**`user-token` required. For more information about request headers see [API Welcome page](/server/api.md).**
 
 **Response Example**
 
-    [
-        {
-            "id": 1,
-            "user_id": 2,
-            "position": 1,
-            "photo_url": "zimin.jpg",
-            "info": "Superstar",
-            "url": "https://github.com/azimin",
-            "active": 1
-        }
-    ]
+    {
+        "id": 1,
+        "name": "John",
+        "lastname": "Appleseed",
+        "company": "Apple",
+        "position": "Employee",
+        "email": "john@apple.com",
+        "phone": "1234567890",
+        "photo": "http://cocoaheads.ru/resources/photos/john_appleseed.jpg"
+    }
 
-## POST Edit User
+## POST Create User Object
 
-Allows to edit User info.
+Creates new User instance in Database and returns it.
 
-    POST /user/edit
+    POST /users
 
-**Request Parameters**
+**Request Body Parameters**
 
-|Name|Value Type|Value Description|Required|
+|Name|Type|Value Description|Required|
 |---|---|---|---|
-|name|String|User first name|YES|
-|last_name|String|User last name|YES|
-|email|String|User email address|YES|
-|phone|String|User phone|NO|
-|company|String|User company name|NO|
-|position|String|User position in company|NO|
-
-**Response Data Structure**
+|name|string|User first name|YES|
+|lastname|string|User last name|YES|
+|email|string|User email address|YES|
+|phone|string|User phone|NO|
+|company|string|User company name|NO|
+|position|string|User position in company|NO|
+|photo|string|User photo|NO|
 
 **Response Example**
+
+With only required parameters.
+
+    {
+        "id": 1,
+        "name": "John",
+        "lastname": "Appleseed",
+        "company": "",
+        "position": "",
+        "email": "john@apple.com",
+        "phone": "",
+        "photo": ""
+    }
+
+## PATCH Update User Data
+
+Updates User parameters, which were sent in body. Returns updated User.
+
+    PATCH /user/{user_id}
+
+**`user-token` required. For more information about request headers see [API Welcome page](/server/api.md).**
+
+**Request Body Parameters**
+
+|Name|Type|Value Description|Required|
+|---|---|---|---|
+|name|string|User first name|NO|
+|lastname|string|User last name|NO|
+|email|string|User email address|NO|
+|phone|string|User phone|NO|
+|company|string|User company name|NO|
+|position|string|User position in company|NO|
+|photo|string|User photo|NO|
+
+**Response Example**
+
+    {
+        "id": 1,
+        "name": "John",
+        "lastname": "Appleseed",
+        "company": "Apple",
+        "position": "Employee",
+        "email": "john@apple.com",
+        "phone": "1234567890",
+        "photo": "http://cocoaheads.ru/resources/photos/john_appleseed.jpg"
+    }
 
 ## POST Register Push-Notifications for User
 
-Registering user token for receiving push-notifications.
+Register User token for receiving push-notifications. Creates new instance of `Clients` model in database.
 
-    POST /user/register_push
+    POST /users/clients
+
+**`user-token` required. For more information about request headers see [API Welcome page](/server/api.md).**
 
 **Request Parameters**
 
 |Name|Value Type|Value Description|Required|
 |---|---|---|---|
 |push_token|String|Device token|YES|
-
-**Response Data Structure**
 
 **Response Example**
